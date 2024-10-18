@@ -37,8 +37,41 @@ rep(c(1,2,3,4,5), times=c(1,6,3,4,5))
 
 numbers<-append(numbers, 60)
 
-vec1 = c(1,2,3)
-vec2 = c(4,5,6)
+vec1 = c(1,54,323)
+vec2 = c(421,64,16)
 vec3 = c(vec1,vec2)
 
+#sorting
+vec3 <- sort(vec3)
+
 ##only difference in list is no automatic type casting
+##for eg vec
+
+vec <- c(10,20,"Test",30,50,90) #vector type casts all to string/character
+
+lis <- list(10,20,"Test",30,50,90)
+
+
+##all other vector operations can be implemented in list too
+"Test" %in% lis
+
+
+
+##matrices 
+number_matrix <- matrix(c(1:12), nrow=3, ncol=4, byrow=T)
+number_matrix
+
+number_matrix[1,2] ##first row second column
+number_matrix[2,2]
+number_matrix[2,]
+number_matrix[,2]
+number_matrix[,]
+number_matrix[c(1,3),c(1,3)]
+
+number_matrix <- rbind(number_matrix,c(13,14,15,16)) ##rbind adds new rows
+number_matrix <- cbind(number_matrix,c(100,200,200,400)) 
+number_matrix
+
+
+##arrays are like matrices but can be higher dimensional
+
